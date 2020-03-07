@@ -1,5 +1,5 @@
 image.pdf: image.tex
-	latexmk -pdflatex="pdflatex --shell-escape -interactive=nonstopmode" -use-make $<
+	pdflatex --shell-escape -interactive=nonstopmode $<
 
 .PHONY: clean
 clean:
